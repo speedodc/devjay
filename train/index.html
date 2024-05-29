@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        #bigdiv {
+            width: 60%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input[type="text"], select, input[type="date"], input[type="time"], input[type="submit"] {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        label {
+            margin-bottom: 5px;
+        }
+        input[type="int"], select, input[type="date"], input[type="time"], input[type="submit"] {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+<div id="bigdiv">
+    <form action="index.php" method="post">
+        <h1> BOOK A TRAIN TICKET WITH TREVEL</h1>
+        <label for="first_name">First name:</label>
+        <input id="first_name" type="text" name="first_name"  required></input>
+        <label for="last_name">Last name:</label>
+    <input id="last_name" type="text"name="last_name"required></input>
+    <label for="number">Phone number:</label>
+    <input id="number" type="int" name="phone_number" required ></input>
+    <label for="depature" > From:</label>
+    <select id="depature" name="depature" required>
+        <option value="kebbi">kebbi</option>
+        <option value="jega">jega</option> 
+        <option value="kola">kola</option>
+        <option value="kalgo ">kalgo</option>
+        <option value="bunza">bunza</option>
+        <option value="kamba">kamba</option>  
+        <label for="arrival">Arrival:</label>
+    </select>
+    <label for="arrival" > To:</label>
+    <select id="arrival" name="arrival" required>
+        <option value="kebbi">kebbi </option>
+        <option value="jega">jega</option> 
+        <option value="kola">kola</option>
+        <option value="kalgo ">kalgo</option>
+        <option value="bunza">bunza</option>
+        <option value="kamba">kamba</option>  
+        <label for="arrival">Arrival:</label>
+    </select><br>
+    <label for="date">Date</label>
+    <input  id="date"type="date" name="date" required></input>
+    <lable for="time"> Time:</lable>
+    <input id="time" type="time" name="time" required></input><br>
+    <input type="submit" name="submit" placeholder="submit"></input>
+    </form>
+</div>
+</body>
+</html>
